@@ -1,0 +1,24 @@
+{
+  "name": "next-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Dan Kreiger <dan@dankreiger.com> (http://www.dankreiger.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "next": "9.0.1",
+    "puppy-components": "1.1.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@types/node": "12.6.2",
+    "@types/react": "16.8.23",
+    "nodemon": "1.19.1",
+    "typescript": "3.5.3"
+  }
+}
