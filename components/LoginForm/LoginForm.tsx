@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from 'puppy-components';
+import { loginUser } from '../../lib/auth';
 
 interface ILoginFormState {
   email: string;
@@ -17,6 +18,8 @@ const LoginForm: React.SFC = () => {
   };
   const handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void = e => {
     e.preventDefault();
+    const { email, password } = formValues;
+    loginUser(email, password);
     console.log(formValues);
   };
   return (
