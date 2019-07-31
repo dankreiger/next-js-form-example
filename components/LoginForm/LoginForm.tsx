@@ -12,11 +12,11 @@ const LoginForm: React.SFC = () => {
     email: '',
     password: ''
   });
-  const handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void = e => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
-  const handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void = e => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     const { email, password } = formValues;
     loginUser(email, password);
