@@ -13,7 +13,7 @@
     "cookie-parser": "1.4.4",
     "dotenv-webpack": "1.7.0",
     "express": "4.17.1",
-    "next": "9.0.1",
+    "next": "9.3.2",
     "puppy-components": "1.1.2",
     "react": "16.8.6",
     "react-dom": "16.8.6"
